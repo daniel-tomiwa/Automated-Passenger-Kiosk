@@ -1,0 +1,21 @@
+
+import io
+import pandas as pd
+import matplotlib.pyplot as plt
+from PIL import Image
+import io
+import glob, os, sys, time, uuid
+
+from azure.ai.formrecognizer import FormRecognizerClient
+from azure.ai.formrecognizer import FormTrainingClient
+from azure.core.credentials import AzureKeyCredential
+
+from video_indexer import VideoIndexer
+from azure.cognitiveservices.vision.face import FaceClient
+from azure.cognitiveservices.vision.face.models import TrainingStatusType
+from msrest.authentication import CognitiveServicesCredentials
+from PIL import Image
+
+from azure.cognitiveservices.vision.customvision.training import CustomVisionTrainingClient
+from azure.cognitiveservices.vision.customvision.prediction import CustomVisionPredictionClient
+from msrest.authentication import ApiKeyCredentials
